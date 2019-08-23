@@ -1,0 +1,119 @@
+html {
+    padding: 2em;
+    height: 100%;
+}
+html,
+body {
+    background-color: #f3eae2;
+}
+
+::-moz-selection {
+    background: #ee4242;
+    color: #f3eae2;
+}
+::selection {
+    background: #ee4242;
+    color: #f3eae2;
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+    color: #ee4242;
+    font-family: futura-pt, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    text-align: center;
+}
+
+img {
+    max-height: 120px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.8em !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    line-height: 1em;
+    margin: 20px auto !important;
+}
+
+h2 {
+    font-size: 1.2em !important;
+    font-family: acumin-pro-extra-condensed, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: #705a5d;
+    margin: 0px auto !important;
+}
+
+a,
+a:initial,
+a:focus,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    border: 0px;
+}
+a.contact {
+    position: absolute;
+    text-decoration: none;
+    text-align: center;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: inherit;
+    max-width: 200px;
+    /*
+    border-bottom: 2px solid #f8ba00;
+    transition: 1s;
+*/
+}
+
+/*
+a.contact:hover, a.contact:focus {
+    border-bottom: 2px solid #ee4242;
+}
+*/
+
+a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #f8ba00;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+@media screen and (max-width: 345px) {
+    html {
+        padding: 1.5em 0.4em;
+    }
+    h1 {
+        font-size: 2em !important;
+    }
+}
